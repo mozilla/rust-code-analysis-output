@@ -2,1094 +2,974 @@
 source: tests/common/mod.rs
 expression: funcspace_struct
 ---
-{
-  "name": null,
-  "start_line": 1,
-  "end_line": 1673,
-  "kind": "unit",
-  "spaces": [
-    {
-      "name": "<anonymous>",
-      "start_line": 25,
-      "end_line": 50,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 0.0,
-          "total_closures": 1.0,
-          "average_functions": 0.0,
-          "average_closures": 1.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 0.0,
-          "functions_max": 0.0,
-          "closures_min": 1.0,
-          "closures_max": 1.0
-        },
-        "nexits": {
-          "sum": 0.0,
-          "average": 0.0,
-          "min": 0.0,
-          "max": 0.0
-        },
-        "cognitive": {
-          "sum": 0.0,
-          "average": 0.0,
-          "min": 0.0,
-          "max": 0.0
-        },
-        "cyclomatic": {
-          "sum": 1.0,
-          "average": 1.0,
-          "min": 1.0,
-          "max": 1.0
-        },
-        "halstead": {
-          "n1": 7.0,
-          "N1": 76.0,
-          "n2": 46.0,
-          "N2": 73.0,
-          "length": 149.0,
-          "estimated_program_length": 273.7353344330258,
-          "purity_ratio": 1.8371498955236631,
-          "vocabulary": 53.0,
-          "volume": 853.4601477299166,
-          "difficulty": 5.554347826086956,
-          "level": 0.18003913894324855,
-          "effort": 4740.414516195515,
-          "time": 263.3563620108619,
-          "bugs": 0.09406389502762458
-        },
-        "loc": {
-          "sloc": 26.0,
-          "ploc": 26.0,
-          "lloc": 25.0,
-          "cloc": 24.0,
-          "blank": 0.0,
-          "sloc_average": 26.0,
-          "ploc_average": 26.0,
-          "lloc_average": 25.0,
-          "cloc_average": 24.0,
-          "blank_average": 0.0,
-          "sloc_min": 26.0,
-          "sloc_max": 26.0,
-          "cloc_min": 24.0,
-          "cloc_max": 24.0,
-          "ploc_min": 26.0,
-          "ploc_max": 26.0,
-          "lloc_min": 25.0,
-          "lloc_max": 25.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 0.0,
-          "closures": 1.0,
-          "functions_average": 0.0,
-          "closures_average": 1.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 0.0,
-          "functions_max": 0.0,
-          "closures_min": 1.0,
-          "closures_max": 1.0
-        },
-        "mi": {
-          "mi_original": 82.89248207244984,
-          "mi_sei": 93.8199770077232,
-          "mi_visual_studio": 48.475135714882946
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "mapSpecialUnicodeValues",
-      "start_line": 52,
-      "end_line": 62,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 1.0,
-          "total_closures": 0.0,
-          "average_functions": 1.0,
-          "average_closures": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "cognitive": {
-          "sum": 5.0,
-          "average": 5.0,
-          "min": 5.0,
-          "max": 5.0
-        },
-        "cyclomatic": {
-          "sum": 7.0,
-          "average": 7.0,
-          "min": 7.0,
-          "max": 7.0
-        },
-        "halstead": {
-          "n1": 13.0,
-          "N1": 32.0,
-          "n2": 10.0,
-          "N2": 18.0,
-          "length": 50.0,
-          "estimated_program_length": 81.32499728470782,
-          "purity_ratio": 1.6264999456941565,
-          "vocabulary": 23.0,
-          "volume": 226.17809780285066,
-          "difficulty": 11.7,
-          "level": 0.08547008547008547,
-          "effort": 2646.2837442933524,
-          "time": 147.01576357185291,
-          "bugs": 0.06377292713633875
-        },
-        "loc": {
-          "sloc": 11.0,
-          "ploc": 10.0,
-          "lloc": 11.0,
-          "cloc": 3.0,
-          "blank": 0.0,
-          "sloc_average": 11.0,
-          "ploc_average": 10.0,
-          "lloc_average": 11.0,
-          "cloc_average": 3.0,
-          "blank_average": 0.0,
-          "sloc_min": 11.0,
-          "sloc_max": 11.0,
-          "cloc_min": 3.0,
-          "cloc_max": 3.0,
-          "ploc_min": 10.0,
-          "ploc_max": 10.0,
-          "lloc_min": 11.0,
-          "lloc_max": 11.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 102.35321837268256,
-          "mi_sei": 108.85760800472801,
-          "mi_visual_studio": 59.85568325887869
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "getUnicodeForGlyph",
-      "start_line": 64,
-      "end_line": 95,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 2.0,
-          "total_closures": 0.0,
-          "average_functions": 2.0,
-          "average_closures": 0.0,
-          "total": 2.0,
-          "average": 2.0,
-          "functions_min": 2.0,
-          "functions_max": 2.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 5.0,
-          "average": 5.0,
-          "min": 5.0,
-          "max": 5.0
-        },
-        "cognitive": {
-          "sum": 14.0,
-          "average": 14.0,
-          "min": 14.0,
-          "max": 14.0
-        },
-        "cyclomatic": {
-          "sum": 11.0,
-          "average": 11.0,
-          "min": 11.0,
-          "max": 11.0
-        },
-        "halstead": {
-          "n1": 20.0,
-          "N1": 81.0,
-          "n2": 24.0,
-          "N2": 54.0,
-          "length": 135.0,
-          "estimated_program_length": 196.477661915055,
-          "purity_ratio": 1.4553900882596666,
-          "vocabulary": 44.0,
-          "volume": 737.0232685160352,
-          "difficulty": 22.5,
-          "level": 0.044444444444444446,
-          "effort": 16583.02354161079,
-          "time": 921.2790856450439,
-          "bugs": 0.21676436613764966
-        },
-        "loc": {
-          "sloc": 32.0,
-          "ploc": 27.0,
-          "lloc": 24.0,
-          "cloc": 4.0,
-          "blank": 1.0,
-          "sloc_average": 32.0,
-          "ploc_average": 27.0,
-          "lloc_average": 24.0,
-          "cloc_average": 4.0,
-          "blank_average": 1.0,
-          "sloc_min": 32.0,
-          "sloc_max": 32.0,
-          "cloc_min": 4.0,
-          "cloc_max": 4.0,
-          "ploc_min": 27.0,
-          "ploc_max": 27.0,
-          "lloc_min": 24.0,
-          "lloc_max": 24.0,
-          "blank_min": 1.0,
-          "blank_max": 1.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 77.99145716378989,
-          "mi_sei": 63.974269918976056,
-          "mi_visual_studio": 45.60903927707011
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "getUnicodeRangeFor",
-      "start_line": 223,
-      "end_line": 231,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 1.0,
-          "total_closures": 0.0,
-          "average_functions": 1.0,
-          "average_closures": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 2.0,
-          "average": 2.0,
-          "min": 2.0,
-          "max": 2.0
-        },
-        "cognitive": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "cyclomatic": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "halstead": {
-          "n1": 18.0,
-          "N1": 32.0,
-          "n2": 14.0,
-          "N2": 24.0,
-          "length": 56.0,
-          "estimated_program_length": 128.36161893476807,
-          "purity_ratio": 2.292171766692287,
-          "vocabulary": 32.0,
-          "volume": 280.0,
-          "difficulty": 15.428571428571429,
-          "level": 0.06481481481481481,
-          "effort": 4320.0,
-          "time": 240.0,
-          "bugs": 0.08841675596736924
-        },
-        "loc": {
-          "sloc": 9.0,
-          "ploc": 9.0,
-          "lloc": 8.0,
-          "cloc": 0.0,
-          "blank": 0.0,
-          "sloc_average": 9.0,
-          "ploc_average": 9.0,
-          "lloc_average": 8.0,
-          "cloc_average": 0.0,
-          "blank_average": 0.0,
-          "sloc_min": 9.0,
-          "sloc_max": 9.0,
-          "cloc_min": 0.0,
-          "cloc_max": 0.0,
-          "ploc_min": 9.0,
-          "ploc_max": 9.0,
-          "lloc_min": 8.0,
-          "lloc_max": 8.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 105.18405591067317,
-          "mi_sei": 76.4549432885207,
-          "mi_visual_studio": 61.5111438074112
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "isRTLRangeFor",
-      "start_line": 233,
-      "end_line": 243,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 1.0,
-          "total_closures": 0.0,
-          "average_functions": 1.0,
-          "average_closures": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 3.0,
-          "average": 3.0,
-          "min": 3.0,
-          "max": 3.0
-        },
-        "cognitive": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "cyclomatic": {
-          "sum": 5.0,
-          "average": 5.0,
-          "min": 5.0,
-          "max": 5.0
-        },
-        "halstead": {
-          "n1": 13.0,
-          "N1": 32.0,
-          "n2": 12.0,
-          "N2": 27.0,
-          "length": 59.0,
-          "estimated_program_length": 91.12526634448807,
-          "purity_ratio": 1.544496039737086,
-          "vocabulary": 25.0,
-          "volume": 273.9875151967087,
-          "difficulty": 14.625,
-          "level": 0.06837606837606838,
-          "effort": 4007.067409751865,
-          "time": 222.61485609732583,
-          "bugs": 0.08409364508467075
-        },
-        "loc": {
-          "sloc": 11.0,
-          "ploc": 11.0,
-          "lloc": 9.0,
-          "cloc": 0.0,
-          "blank": 0.0,
-          "sloc_average": 11.0,
-          "ploc_average": 11.0,
-          "lloc_average": 9.0,
-          "cloc_average": 0.0,
-          "blank_average": 0.0,
-          "sloc_min": 11.0,
-          "sloc_max": 11.0,
-          "cloc_min": 0.0,
-          "cloc_max": 0.0,
-          "ploc_min": 11.0,
-          "ploc_max": 11.0,
-          "lloc_min": 9.0,
-          "lloc_max": 9.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 101.81606737071928,
-          "mi_sei": 71.69778278356291,
-          "mi_visual_studio": 59.54155986591771
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "<anonymous>",
-      "start_line": 247,
-      "end_line": 1628,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 0.0,
-          "total_closures": 0.0,
-          "average_functions": 0.0,
-          "average_closures": 0.0,
-          "total": 0.0,
-          "average": 0.0,
-          "functions_min": 0.0,
-          "functions_max": 0.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 1.0,
-          "average": 1.0,
-          "min": 1.0,
-          "max": 1.0
-        },
-        "cognitive": {
-          "sum": 0.0,
-          "average": 0.0,
-          "min": 0.0,
-          "max": 0.0
-        },
-        "cyclomatic": {
-          "sum": 1.0,
-          "average": 1.0,
-          "min": 1.0,
-          "max": 1.0
-        },
-        "halstead": {
-          "n1": 8.0,
-          "N1": 2761.0,
-          "n2": 2376.0,
-          "N2": 2754.0,
-          "length": 5515.0,
-          "estimated_program_length": 26669.22223102262,
-          "purity_ratio": 4.8357610573023795,
-          "vocabulary": 2384.0,
-          "volume": 61873.714390348825,
-          "difficulty": 4.636363636363637,
-          "level": 0.2156862745098039,
-          "effort": 286869.03944616276,
-          "time": 15937.168858120152,
-          "bugs": 1.4498882537025346
-        },
-        "loc": {
-          "sloc": 1382.0,
-          "ploc": 1381.0,
-          "lloc": 2.0,
-          "cloc": 1.0,
-          "blank": 0.0,
-          "sloc_average": 1382.0,
-          "ploc_average": 1381.0,
-          "lloc_average": 2.0,
-          "cloc_average": 1.0,
-          "blank_average": 0.0,
-          "sloc_min": 1382.0,
-          "sloc_max": 1382.0,
-          "cloc_min": 1.0,
-          "cloc_max": 1.0,
-          "ploc_min": 1381.0,
-          "ploc_max": 1381.0,
-          "lloc_min": 2.0,
-          "lloc_max": 2.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 0.0,
-          "closures": 1.0,
-          "functions_average": 0.0,
-          "closures_average": 1.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 0.0,
-          "functions_max": 0.0,
-          "closures_min": 1.0,
-          "closures_max": 1.0
-        },
-        "mi": {
-          "mi_original": -3.7476732251595593,
-          "mi_sei": -78.92274992820865,
-          "mi_visual_studio": 0.0
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "reverseIfRtl",
-      "start_line": 1630,
-      "end_line": 1641,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 1.0,
-          "total_closures": 0.0,
-          "average_functions": 1.0,
-          "average_closures": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 2.0,
-          "average": 2.0,
-          "min": 2.0,
-          "max": 2.0
-        },
-        "cognitive": {
-          "sum": 3.0,
-          "average": 3.0,
-          "min": 3.0,
-          "max": 3.0
-        },
-        "cyclomatic": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "halstead": {
-          "n1": 18.0,
-          "N1": 40.0,
-          "n2": 17.0,
-          "N2": 30.0,
-          "length": 70.0,
-          "estimated_program_length": 144.5455183272174,
-          "purity_ratio": 2.0649359761031056,
-          "vocabulary": 35.0,
-          "volume": 359.0498111861476,
-          "difficulty": 15.882352941176471,
-          "level": 0.06296296296296296,
-          "effort": 5702.555824721168,
-          "time": 316.8086569289538,
-          "bugs": 0.10639595299437671
-        },
-        "loc": {
-          "sloc": 12.0,
-          "ploc": 11.0,
-          "lloc": 9.0,
-          "cloc": 1.0,
-          "blank": 0.0,
-          "sloc_average": 12.0,
-          "ploc_average": 11.0,
-          "lloc_average": 9.0,
-          "cloc_average": 1.0,
-          "blank_average": 0.0,
-          "sloc_min": 12.0,
-          "sloc_max": 12.0,
-          "cloc_min": 1.0,
-          "cloc_max": 1.0,
-          "ploc_min": 11.0,
-          "ploc_max": 11.0,
-          "lloc_min": 9.0,
-          "lloc_max": 9.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 99.23051440426954,
-          "mi_sei": 89.4885404291991,
-          "mi_visual_studio": 58.02954058729213
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "getCharUnicodeCategory",
-      "start_line": 1646,
-      "end_line": 1659,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 1.0,
-          "total_closures": 0.0,
-          "average_functions": 1.0,
-          "average_closures": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 2.0,
-          "average": 2.0,
-          "min": 2.0,
-          "max": 2.0
-        },
-        "cognitive": {
-          "sum": 4.0,
-          "average": 4.0,
-          "min": 4.0,
-          "max": 4.0
-        },
-        "cyclomatic": {
-          "sum": 5.0,
-          "average": 5.0,
-          "min": 5.0,
-          "max": 5.0
-        },
-        "halstead": {
-          "n1": 14.0,
-          "N1": 49.0,
-          "n2": 19.0,
-          "N2": 33.0,
-          "length": 82.0,
-          "estimated_program_length": 134.01359166423458,
-          "purity_ratio": 1.6343120934662754,
-          "vocabulary": 33.0,
-          "volume": 413.6403177873932,
-          "difficulty": 12.157894736842104,
-          "level": 0.08225108225108226,
-          "effort": 5028.995442573043,
-          "time": 279.3886356985024,
-          "bugs": 0.09784370885019596
-        },
-        "loc": {
-          "sloc": 14.0,
-          "ploc": 14.0,
-          "lloc": 6.0,
-          "cloc": 0.0,
-          "blank": 0.0,
-          "sloc_average": 14.0,
-          "ploc_average": 14.0,
-          "lloc_average": 6.0,
-          "cloc_average": 0.0,
-          "blank_average": 0.0,
-          "sloc_min": 14.0,
-          "sloc_max": 14.0,
-          "cloc_min": 0.0,
-          "cloc_max": 0.0,
-          "ploc_min": 14.0,
-          "ploc_max": 14.0,
-          "lloc_min": 6.0,
-          "lloc_max": 6.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 95.76728790758074,
-          "mi_sei": 62.97123864866186,
-          "mi_visual_studio": 56.00426193425774
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    },
-    {
-      "name": "clearUnicodeCaches",
-      "start_line": 1661,
-      "end_line": 1663,
-      "kind": "function",
-      "spaces": [],
-      "metrics": {
-        "nargs": {
-          "total_functions": 0.0,
-          "total_closures": 0.0,
-          "average_functions": 0.0,
-          "average_closures": 0.0,
-          "total": 0.0,
-          "average": 0.0,
-          "functions_min": 0.0,
-          "functions_max": 0.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "nexits": {
-          "sum": 0.0,
-          "average": 0.0,
-          "min": 0.0,
-          "max": 0.0
-        },
-        "cognitive": {
-          "sum": 0.0,
-          "average": 0.0,
-          "min": 0.0,
-          "max": 0.0
-        },
-        "cyclomatic": {
-          "sum": 1.0,
-          "average": 1.0,
-          "min": 1.0,
-          "max": 1.0
-        },
-        "halstead": {
-          "n1": 5.0,
-          "N1": 6.0,
-          "n2": 4.0,
-          "N2": 4.0,
-          "length": 10.0,
-          "estimated_program_length": 19.60964047443681,
-          "purity_ratio": 1.960964047443681,
-          "vocabulary": 9.0,
-          "volume": 31.69925001442312,
-          "difficulty": 2.5,
-          "level": 0.4,
-          "effort": 79.2481250360578,
-          "time": 4.402673613114322,
-          "bugs": 0.006149947511600477
-        },
-        "loc": {
-          "sloc": 3.0,
-          "ploc": 3.0,
-          "lloc": 2.0,
-          "cloc": 0.0,
-          "blank": 0.0,
-          "sloc_average": 3.0,
-          "ploc_average": 3.0,
-          "lloc_average": 2.0,
-          "cloc_average": 0.0,
-          "blank_average": 0.0,
-          "sloc_min": 3.0,
-          "sloc_max": 3.0,
-          "cloc_min": 0.0,
-          "cloc_max": 0.0,
-          "ploc_min": 3.0,
-          "ploc_max": 3.0,
-          "lloc_min": 2.0,
-          "lloc_max": 2.0,
-          "blank_min": 0.0,
-          "blank_max": 0.0
-        },
-        "nom": {
-          "functions": 1.0,
-          "closures": 0.0,
-          "functions_average": 1.0,
-          "closures_average": 0.0,
-          "total": 1.0,
-          "average": 1.0,
-          "functions_min": 1.0,
-          "functions_max": 1.0,
-          "closures_min": 0.0,
-          "closures_max": 0.0
-        },
-        "mi": {
-          "mi_original": 134.9997572104644,
-          "mi_sei": 119.16444811614275,
-          "mi_visual_studio": 78.94722643886807
-        },
-        "abc": {
-          "assignments": 0.0,
-          "branches": 0.0,
-          "conditions": 0.0,
-          "magnitude": 0.0,
-          "assignments_average": 0.0,
-          "branches_average": 0.0,
-          "conditions_average": 0.0,
-          "assignments_min": 0.0,
-          "assignments_max": 0.0,
-          "branches_min": 0.0,
-          "branches_max": 0.0,
-          "conditions_min": 0.0,
-          "conditions_max": 0.0
-        }
-      }
-    }
-  ],
-  "metrics": {
-    "nargs": {
-      "total_functions": 7.0,
-      "total_closures": 1.0,
-      "average_functions": 1.0,
-      "average_closures": 0.5,
-      "total": 8.0,
-      "average": 0.8888888888888888,
-      "functions_min": 0.0,
-      "functions_max": 2.0,
-      "closures_min": 0.0,
-      "closures_max": 1.0
-    },
-    "nexits": {
-      "sum": 19.0,
-      "average": 2.111111111111111,
-      "min": 0.0,
-      "max": 5.0
-    },
-    "cognitive": {
-      "sum": 34.0,
-      "average": 3.7777777777777777,
-      "min": 0.0,
-      "max": 14.0
-    },
-    "cyclomatic": {
-      "sum": 40.0,
-      "average": 4.0,
-      "min": 1.0,
-      "max": 11.0
-    },
-    "halstead": {
-      "n1": 31.0,
-      "N1": 3763.0,
-      "n2": 2752.0,
-      "N2": 3530.0,
-      "length": 7293.0,
-      "estimated_program_length": 31598.660690562167,
-      "purity_ratio": 4.332738336838361,
-      "vocabulary": 2783.0,
-      "volume": 83449.6069349674,
-      "difficulty": 19.88190406976744,
-      "level": 0.05029699351183405,
-      "effort": 1659137.0797408216,
-      "time": 92174.28220782342,
-      "bugs": 4.671613716097121
-    },
-    "loc": {
-      "sloc": 1673.0,
-      "ploc": 1632.0,
-      "lloc": 98.0,
-      "cloc": 176.0,
-      "blank": 14.0,
-      "sloc_average": 167.3,
-      "ploc_average": 163.2,
-      "lloc_average": 9.8,
-      "cloc_average": 17.6,
-      "blank_average": 1.4,
-      "sloc_min": 3.0,
-      "sloc_max": 1382.0,
-      "cloc_min": 0.0,
-      "cloc_max": 24.0,
-      "ploc_min": 3.0,
-      "ploc_max": 1381.0,
-      "lloc_min": 2.0,
-      "lloc_max": 25.0,
-      "blank_min": 0.0,
-      "blank_max": 1.0
-    },
-    "nom": {
-      "functions": 7.0,
-      "closures": 2.0,
-      "functions_average": 0.7,
-      "closures_average": 0.2,
-      "total": 9.0,
-      "average": 0.9,
-      "functions_min": 0.0,
-      "functions_max": 1.0,
-      "closures_min": 0.0,
-      "closures_max": 1.0
-    },
-    "mi": {
-      "mi_original": -17.36884469422887,
-      "mi_sei": -72.60622354113694,
-      "mi_visual_studio": 0.0
-    },
-    "abc": {
-      "assignments": 0.0,
-      "branches": 0.0,
-      "conditions": 0.0,
-      "magnitude": 0.0,
-      "assignments_average": 0.0,
-      "branches_average": 0.0,
-      "conditions_average": 0.0,
-      "assignments_min": 0.0,
-      "assignments_max": 0.0,
-      "branches_min": 0.0,
-      "branches_max": 0.0,
-      "conditions_min": 0.0,
-      "conditions_max": 0.0
-    }
-  }
-}
+name: "[filepath]"
+start_line: 1
+end_line: 1673
+kind: unit
+spaces:
+  - name: "<anonymous>"
+    start_line: 25
+    end_line: 50
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 0
+        total_closures: 1
+        average_functions: 0
+        average_closures: 1
+        total: 1
+        average: 1
+        functions_min: 0
+        functions_max: 0
+        closures_min: 1
+        closures_max: 1
+      nexits:
+        sum: 0
+        average: 0
+        min: 0
+        max: 0
+      cognitive:
+        sum: 0
+        average: 0
+        min: 0
+        max: 0
+      cyclomatic:
+        sum: 1
+        average: 1
+        min: 1
+        max: 1
+      halstead:
+        n1: 7
+        N1: 76
+        n2: 46
+        N2: 73
+        length: 149
+        estimated_program_length: 273.735
+        purity_ratio: 1.837
+        vocabulary: 53
+        volume: 853.46
+        difficulty: 5.554
+        level: 0.18
+        effort: 4740.415
+        time: 263.356
+        bugs: 0.094
+      loc:
+        sloc: 26
+        ploc: 26
+        lloc: 25
+        cloc: 24
+        blank: 0
+        sloc_average: 26
+        ploc_average: 26
+        lloc_average: 25
+        cloc_average: 24
+        blank_average: 0
+        sloc_min: 26
+        sloc_max: 26
+        cloc_min: 24
+        cloc_max: 24
+        ploc_min: 26
+        ploc_max: 26
+        lloc_min: 25
+        lloc_max: 25
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 0
+        closures: 1
+        functions_average: 0
+        closures_average: 1
+        total: 1
+        average: 1
+        functions_min: 0
+        functions_max: 0
+        closures_min: 1
+        closures_max: 1
+      mi:
+        mi_original: 82.892
+        mi_sei: 93.82
+        mi_visual_studio: 48.475
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: mapSpecialUnicodeValues
+    start_line: 52
+    end_line: 62
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 1
+        total_closures: 0
+        average_functions: 1
+        average_closures: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      cognitive:
+        sum: 5
+        average: 5
+        min: 5
+        max: 5
+      cyclomatic:
+        sum: 7
+        average: 7
+        min: 7
+        max: 7
+      halstead:
+        n1: 13
+        N1: 32
+        n2: 10
+        N2: 18
+        length: 50
+        estimated_program_length: 81.325
+        purity_ratio: 1.626
+        vocabulary: 23
+        volume: 226.178
+        difficulty: 11.7
+        level: 0.085
+        effort: 2646.284
+        time: 147.016
+        bugs: 0.064
+      loc:
+        sloc: 11
+        ploc: 10
+        lloc: 11
+        cloc: 3
+        blank: 0
+        sloc_average: 11
+        ploc_average: 10
+        lloc_average: 11
+        cloc_average: 3
+        blank_average: 0
+        sloc_min: 11
+        sloc_max: 11
+        cloc_min: 3
+        cloc_max: 3
+        ploc_min: 10
+        ploc_max: 10
+        lloc_min: 11
+        lloc_max: 11
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 102.353
+        mi_sei: 108.858
+        mi_visual_studio: 59.856
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: getUnicodeForGlyph
+    start_line: 64
+    end_line: 95
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 2
+        total_closures: 0
+        average_functions: 2
+        average_closures: 0
+        total: 2
+        average: 2
+        functions_min: 2
+        functions_max: 2
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 5
+        average: 5
+        min: 5
+        max: 5
+      cognitive:
+        sum: 14
+        average: 14
+        min: 14
+        max: 14
+      cyclomatic:
+        sum: 11
+        average: 11
+        min: 11
+        max: 11
+      halstead:
+        n1: 20
+        N1: 81
+        n2: 24
+        N2: 54
+        length: 135
+        estimated_program_length: 196.478
+        purity_ratio: 1.455
+        vocabulary: 44
+        volume: 737.023
+        difficulty: 22.5
+        level: 0.044
+        effort: 16583.024
+        time: 921.279
+        bugs: 0.217
+      loc:
+        sloc: 32
+        ploc: 27
+        lloc: 24
+        cloc: 4
+        blank: 1
+        sloc_average: 32
+        ploc_average: 27
+        lloc_average: 24
+        cloc_average: 4
+        blank_average: 1
+        sloc_min: 32
+        sloc_max: 32
+        cloc_min: 4
+        cloc_max: 4
+        ploc_min: 27
+        ploc_max: 27
+        lloc_min: 24
+        lloc_max: 24
+        blank_min: 1
+        blank_max: 1
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 77.991
+        mi_sei: 63.974
+        mi_visual_studio: 45.609
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: getUnicodeRangeFor
+    start_line: 223
+    end_line: 231
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 1
+        total_closures: 0
+        average_functions: 1
+        average_closures: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 2
+        average: 2
+        min: 2
+        max: 2
+      cognitive:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      cyclomatic:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      halstead:
+        n1: 18
+        N1: 32
+        n2: 14
+        N2: 24
+        length: 56
+        estimated_program_length: 128.362
+        purity_ratio: 2.292
+        vocabulary: 32
+        volume: 280
+        difficulty: 15.429
+        level: 0.065
+        effort: 4320
+        time: 240
+        bugs: 0.088
+      loc:
+        sloc: 9
+        ploc: 9
+        lloc: 8
+        cloc: 0
+        blank: 0
+        sloc_average: 9
+        ploc_average: 9
+        lloc_average: 8
+        cloc_average: 0
+        blank_average: 0
+        sloc_min: 9
+        sloc_max: 9
+        cloc_min: 0
+        cloc_max: 0
+        ploc_min: 9
+        ploc_max: 9
+        lloc_min: 8
+        lloc_max: 8
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 105.184
+        mi_sei: 76.455
+        mi_visual_studio: 61.511
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: isRTLRangeFor
+    start_line: 233
+    end_line: 243
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 1
+        total_closures: 0
+        average_functions: 1
+        average_closures: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 3
+        average: 3
+        min: 3
+        max: 3
+      cognitive:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      cyclomatic:
+        sum: 5
+        average: 5
+        min: 5
+        max: 5
+      halstead:
+        n1: 13
+        N1: 32
+        n2: 12
+        N2: 27
+        length: 59
+        estimated_program_length: 91.125
+        purity_ratio: 1.544
+        vocabulary: 25
+        volume: 273.988
+        difficulty: 14.625
+        level: 0.068
+        effort: 4007.067
+        time: 222.615
+        bugs: 0.084
+      loc:
+        sloc: 11
+        ploc: 11
+        lloc: 9
+        cloc: 0
+        blank: 0
+        sloc_average: 11
+        ploc_average: 11
+        lloc_average: 9
+        cloc_average: 0
+        blank_average: 0
+        sloc_min: 11
+        sloc_max: 11
+        cloc_min: 0
+        cloc_max: 0
+        ploc_min: 11
+        ploc_max: 11
+        lloc_min: 9
+        lloc_max: 9
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 101.816
+        mi_sei: 71.698
+        mi_visual_studio: 59.542
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: "<anonymous>"
+    start_line: 247
+    end_line: 1628
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 0
+        total_closures: 0
+        average_functions: 0
+        average_closures: 0
+        total: 0
+        average: 0
+        functions_min: 0
+        functions_max: 0
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 1
+        average: 1
+        min: 1
+        max: 1
+      cognitive:
+        sum: 0
+        average: 0
+        min: 0
+        max: 0
+      cyclomatic:
+        sum: 1
+        average: 1
+        min: 1
+        max: 1
+      halstead:
+        n1: 8
+        N1: 2761
+        n2: 2376
+        N2: 2754
+        length: 5515
+        estimated_program_length: 26669.222
+        purity_ratio: 4.836
+        vocabulary: 2384
+        volume: 61873.714
+        difficulty: 4.636
+        level: 0.216
+        effort: 286869.039
+        time: 15937.169
+        bugs: 1.45
+      loc:
+        sloc: 1382
+        ploc: 1381
+        lloc: 2
+        cloc: 1
+        blank: 0
+        sloc_average: 1382
+        ploc_average: 1381
+        lloc_average: 2
+        cloc_average: 1
+        blank_average: 0
+        sloc_min: 1382
+        sloc_max: 1382
+        cloc_min: 1
+        cloc_max: 1
+        ploc_min: 1381
+        ploc_max: 1381
+        lloc_min: 2
+        lloc_max: 2
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 0
+        closures: 1
+        functions_average: 0
+        closures_average: 1
+        total: 1
+        average: 1
+        functions_min: 0
+        functions_max: 0
+        closures_min: 1
+        closures_max: 1
+      mi:
+        mi_original: -3.748
+        mi_sei: -78.923
+        mi_visual_studio: 0
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: reverseIfRtl
+    start_line: 1630
+    end_line: 1641
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 1
+        total_closures: 0
+        average_functions: 1
+        average_closures: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 2
+        average: 2
+        min: 2
+        max: 2
+      cognitive:
+        sum: 3
+        average: 3
+        min: 3
+        max: 3
+      cyclomatic:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      halstead:
+        n1: 18
+        N1: 40
+        n2: 17
+        N2: 30
+        length: 70
+        estimated_program_length: 144.546
+        purity_ratio: 2.065
+        vocabulary: 35
+        volume: 359.05
+        difficulty: 15.882
+        level: 0.063
+        effort: 5702.556
+        time: 316.809
+        bugs: 0.106
+      loc:
+        sloc: 12
+        ploc: 11
+        lloc: 9
+        cloc: 1
+        blank: 0
+        sloc_average: 12
+        ploc_average: 11
+        lloc_average: 9
+        cloc_average: 1
+        blank_average: 0
+        sloc_min: 12
+        sloc_max: 12
+        cloc_min: 1
+        cloc_max: 1
+        ploc_min: 11
+        ploc_max: 11
+        lloc_min: 9
+        lloc_max: 9
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 99.231
+        mi_sei: 89.489
+        mi_visual_studio: 58.03
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: getCharUnicodeCategory
+    start_line: 1646
+    end_line: 1659
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 1
+        total_closures: 0
+        average_functions: 1
+        average_closures: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 2
+        average: 2
+        min: 2
+        max: 2
+      cognitive:
+        sum: 4
+        average: 4
+        min: 4
+        max: 4
+      cyclomatic:
+        sum: 5
+        average: 5
+        min: 5
+        max: 5
+      halstead:
+        n1: 14
+        N1: 49
+        n2: 19
+        N2: 33
+        length: 82
+        estimated_program_length: 134.014
+        purity_ratio: 1.634
+        vocabulary: 33
+        volume: 413.64
+        difficulty: 12.158
+        level: 0.082
+        effort: 5028.995
+        time: 279.389
+        bugs: 0.098
+      loc:
+        sloc: 14
+        ploc: 14
+        lloc: 6
+        cloc: 0
+        blank: 0
+        sloc_average: 14
+        ploc_average: 14
+        lloc_average: 6
+        cloc_average: 0
+        blank_average: 0
+        sloc_min: 14
+        sloc_max: 14
+        cloc_min: 0
+        cloc_max: 0
+        ploc_min: 14
+        ploc_max: 14
+        lloc_min: 6
+        lloc_max: 6
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 95.767
+        mi_sei: 62.971
+        mi_visual_studio: 56.004
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+  - name: clearUnicodeCaches
+    start_line: 1661
+    end_line: 1663
+    kind: function
+    spaces: []
+    metrics:
+      nargs:
+        total_functions: 0
+        total_closures: 0
+        average_functions: 0
+        average_closures: 0
+        total: 0
+        average: 0
+        functions_min: 0
+        functions_max: 0
+        closures_min: 0
+        closures_max: 0
+      nexits:
+        sum: 0
+        average: 0
+        min: 0
+        max: 0
+      cognitive:
+        sum: 0
+        average: 0
+        min: 0
+        max: 0
+      cyclomatic:
+        sum: 1
+        average: 1
+        min: 1
+        max: 1
+      halstead:
+        n1: 5
+        N1: 6
+        n2: 4
+        N2: 4
+        length: 10
+        estimated_program_length: 19.61
+        purity_ratio: 1.961
+        vocabulary: 9
+        volume: 31.699
+        difficulty: 2.5
+        level: 0.4
+        effort: 79.248
+        time: 4.403
+        bugs: 0.006
+      loc:
+        sloc: 3
+        ploc: 3
+        lloc: 2
+        cloc: 0
+        blank: 0
+        sloc_average: 3
+        ploc_average: 3
+        lloc_average: 2
+        cloc_average: 0
+        blank_average: 0
+        sloc_min: 3
+        sloc_max: 3
+        cloc_min: 0
+        cloc_max: 0
+        ploc_min: 3
+        ploc_max: 3
+        lloc_min: 2
+        lloc_max: 2
+        blank_min: 0
+        blank_max: 0
+      nom:
+        functions: 1
+        closures: 0
+        functions_average: 1
+        closures_average: 0
+        total: 1
+        average: 1
+        functions_min: 1
+        functions_max: 1
+        closures_min: 0
+        closures_max: 0
+      mi:
+        mi_original: 135
+        mi_sei: 119.164
+        mi_visual_studio: 78.947
+      abc:
+        assignments: 0
+        branches: 0
+        conditions: 0
+        magnitude: 0
+        assignments_average: 0
+        branches_average: 0
+        conditions_average: 0
+        assignments_min: 0
+        assignments_max: 0
+        branches_min: 0
+        branches_max: 0
+        conditions_min: 0
+        conditions_max: 0
+metrics:
+  nargs:
+    total_functions: 7
+    total_closures: 1
+    average_functions: 1
+    average_closures: 0.5
+    total: 8
+    average: 0.889
+    functions_min: 0
+    functions_max: 2
+    closures_min: 0
+    closures_max: 1
+  nexits:
+    sum: 19
+    average: 2.111
+    min: 0
+    max: 5
+  cognitive:
+    sum: 34
+    average: 3.778
+    min: 0
+    max: 14
+  cyclomatic:
+    sum: 40
+    average: 4
+    min: 1
+    max: 11
+  halstead:
+    n1: 31
+    N1: 3763
+    n2: 2752
+    N2: 3530
+    length: 7293
+    estimated_program_length: 31598.661
+    purity_ratio: 4.333
+    vocabulary: 2783
+    volume: 83449.607
+    difficulty: 19.882
+    level: 0.05
+    effort: 1659137.08
+    time: 92174.282
+    bugs: 4.672
+  loc:
+    sloc: 1673
+    ploc: 1632
+    lloc: 98
+    cloc: 176
+    blank: 14
+    sloc_average: 167.3
+    ploc_average: 163.2
+    lloc_average: 9.8
+    cloc_average: 17.6
+    blank_average: 1.4
+    sloc_min: 3
+    sloc_max: 1382
+    cloc_min: 0
+    cloc_max: 24
+    ploc_min: 3
+    ploc_max: 1381
+    lloc_min: 2
+    lloc_max: 25
+    blank_min: 0
+    blank_max: 1
+  nom:
+    functions: 7
+    closures: 2
+    functions_average: 0.7
+    closures_average: 0.2
+    total: 9
+    average: 0.9
+    functions_min: 0
+    functions_max: 1
+    closures_min: 0
+    closures_max: 1
+  mi:
+    mi_original: -17.369
+    mi_sei: -72.606
+    mi_visual_studio: 0
+  abc:
+    assignments: 0
+    branches: 0
+    conditions: 0
+    magnitude: 0
+    assignments_average: 0
+    branches_average: 0
+    conditions_average: 0
+    assignments_min: 0
+    assignments_max: 0
+    branches_min: 0
+    branches_max: 0
+    conditions_min: 0
+    conditions_max: 0
+
