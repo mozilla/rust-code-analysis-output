@@ -3,15 +3,112 @@ source: tests/common/mod.rs
 expression: funcspace_struct
 ---
 name: "[filepath]"
-start_line: 22
-end_line: 22
-kind: namespace
+start_line: 1
+end_line: 157
+kind: unit
 spaces:
-  - name: FilePiece
+  - name: util
     start_line: 22
     end_line: 22
-    kind: class
-    spaces: []
+    kind: namespace
+    spaces:
+      - name: FilePiece
+        start_line: 22
+        end_line: 22
+        kind: class
+        spaces: []
+        metrics:
+          nargs:
+            total_functions: 0
+            total_closures: 0
+            average_functions: 0
+            average_closures: 0
+            total: 0
+            average: 0
+            functions_min: 0
+            functions_max: 0
+            closures_min: 0
+            closures_max: 0
+          nexits:
+            sum: 0
+            average: NaN
+            min: 0
+            max: 0
+          cognitive:
+            sum: 0
+            average: NaN
+            min: 0
+            max: 0
+          cyclomatic:
+            sum: 1
+            average: 1
+            min: 1
+            max: 1
+          halstead:
+            n1: 0
+            N1: 0
+            n2: 1
+            N2: 1
+            length: 1
+            estimated_program_length: NaN
+            purity_ratio: NaN
+            vocabulary: 1
+            volume: 0
+            difficulty: 0
+            level: inf
+            effort: 0
+            time: 0
+            bugs: 0
+          loc:
+            sloc: 1
+            ploc: 1
+            lloc: 0
+            cloc: 0
+            blank: 0
+            sloc_average: 1
+            ploc_average: 1
+            lloc_average: 0
+            cloc_average: 0
+            blank_average: 0
+            sloc_min: 1
+            sloc_max: 1
+            cloc_min: 0
+            cloc_max: 0
+            ploc_min: 1
+            ploc_max: 1
+            lloc_min: 0
+            lloc_max: 0
+            blank_min: 0
+            blank_max: 0
+          nom:
+            functions: 0
+            closures: 0
+            functions_average: 0
+            closures_average: 0
+            total: 0
+            average: 0
+            functions_min: 0
+            functions_max: 0
+            closures_min: 0
+            closures_max: 0
+          mi:
+            mi_original: inf
+            mi_sei: inf
+            mi_visual_studio: inf
+          abc:
+            assignments: 0
+            branches: 0
+            conditions: 0
+            magnitude: 0
+            assignments_average: 0
+            branches_average: 0
+            conditions_average: 0
+            assignments_min: 0
+            assignments_max: 0
+            branches_min: 0
+            branches_max: 0
+            conditions_min: 0
+            conditions_max: 0
     metrics:
       nargs:
         total_functions: 0
@@ -35,33 +132,33 @@ spaces:
         min: 0
         max: 0
       cyclomatic:
-        sum: 1
+        sum: 2
         average: 1
         min: 1
         max: 1
       halstead:
-        n1: 0
-        N1: 0
-        n2: 1
-        N2: 1
-        length: 1
-        estimated_program_length: NaN
-        purity_ratio: NaN
-        vocabulary: 1
-        volume: 0
-        difficulty: 0
-        level: inf
-        effort: 0
-        time: 0
-        bugs: 0
+        n1: 2
+        N1: 2
+        n2: 2
+        N2: 2
+        length: 4
+        estimated_program_length: 4
+        purity_ratio: 1
+        vocabulary: 4
+        volume: 8
+        difficulty: 1
+        level: 1
+        effort: 8
+        time: 0.444
+        bugs: 0.001
       loc:
         sloc: 1
         ploc: 1
         lloc: 0
         cloc: 0
         blank: 0
-        sloc_average: 1
-        ploc_average: 1
+        sloc_average: 0.5
+        ploc_average: 0.5
         lloc_average: 0
         cloc_average: 0
         blank_average: 0
@@ -87,9 +184,9 @@ spaces:
         closures_min: 0
         closures_max: 0
       mi:
-        mi_original: inf
-        mi_sei: inf
-        mi_visual_studio: inf
+        mi_original: 159.727
+        mi_sei: 154.94
+        mi_visual_studio: 93.408
       abc:
         assignments: 0
         branches: 0
@@ -419,35 +516,35 @@ metrics:
     max: 0
   cyclomatic:
     sum: 7
-    average: 1.4
+    average: 1.167
     min: 1
     max: 2
   halstead:
     n1: 14
     N1: 270
-    n2: 86
-    N2: 192
-    length: 462
-    estimated_program_length: 605.962
-    purity_ratio: 1.312
-    vocabulary: 100
-    volume: 3069.462
-    difficulty: 15.628
-    level: 0.064
-    effort: 47969.26
-    time: 2664.959
-    bugs: 0.44
+    n2: 99
+    N2: 206
+    length: 476
+    estimated_program_length: 709.609
+    purity_ratio: 1.491
+    vocabulary: 113
+    volume: 3246.405
+    difficulty: 14.566
+    level: 0.069
+    effort: 47286.023
+    time: 2627.001
+    bugs: 0.436
   loc:
-    sloc: 1
-    ploc: 55
+    sloc: 157
+    ploc: 72
     lloc: 4
     cloc: 59
-    blank: -109
-    sloc_average: 0.2
-    ploc_average: 11
-    lloc_average: 0.8
-    cloc_average: 11.8
-    blank_average: -21.8
+    blank: 30
+    sloc_average: 26.167
+    ploc_average: 12
+    lloc_average: 0.667
+    cloc_average: 9.833
+    blank_average: 5
     sloc_min: 1
     sloc_max: 102
     cloc_min: 0
@@ -461,18 +558,18 @@ metrics:
   nom:
     functions: 1
     closures: 0
-    functions_average: 0.2
+    functions_average: 0.167
     closures_average: 0
     total: 1
-    average: 0.2
+    average: 0.167
     functions_min: 0
     functions_max: 1
     closures_min: 0
     closures_max: 0
   mi:
-    mi_original: 127.638
-    mi_sei: 78.231
-    mi_visual_studio: 74.642
+    mi_original: 45.435
+    mi_sei: 31.223
+    mi_visual_studio: 26.57
   abc:
     assignments: 0
     branches: 0
